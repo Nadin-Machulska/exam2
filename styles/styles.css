@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700;800&family=Open+Sans&family=Source+Sans+Pro&display=swap');
+
+.wrapper {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    /* align-items: center; */
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+header{
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    left: 215px;
+    right: 215px;
+
+}
+.header__logo {
+}
+.header__nav {
+}
+.header__list {
+    display: flex;
+    list-style-type: circle;
+    gap: 93px;
+}
+.list-item {
+    /* padding-right: 70px; */
+    /* padding-left: 70px; */
+    /* margin-left: 25px; */
+}
+.social {
+    /* width: 160px;
+    height: 40px;
+    display: flex; */
+    margin-left: 50px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  /* background: #eee; */
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-wrapper{
+    max-height: 800px;
+}
+.main {
+}
+.main-container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.centres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.centres h2{
+    margin-top: 90px;
+}
+.main__trade {
+    display: flex;
+    gap: 70px;
+    margin-top: 90px;
+}
+.trade__image{
+    position: relative;
+    z-index: 2;
+
+}
+.trade__image::before {
+    content: "";
+    width: 585px;
+    height: 470px;
+    position: absolute;
+    top: -57px;
+    background-color: #55B7FF;
+    left: -215px;
+    z-index: -1;
+}
+.trade__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.trade__title {
+}
+.main__commerce {
+    display: flex;
+    margin-top: 177px;
+}
+.commerce__image{
+    position: relative;
+    z-index: 2;
+}
+.commerce__image::before {
+    content: "";
+    width: 585px;
+    height: 470px;
+    position: absolute;
+    top: -57px;
+    background-color: #7E5AFF;
+    right: -215px;
+    z-index: -1;
+}
+
+.commerce__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.commerce__title {
+}
