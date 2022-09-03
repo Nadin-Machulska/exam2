@@ -49,8 +49,8 @@
 
 
         <main class="main">
-            <div class="main-container">
-                <section class="centres">
+            <section class="container">
+                <div class="centres-container">
                     <h2>WHAT WE DO</h2>
 
 
@@ -92,12 +92,191 @@
                         </div>
 
                     </div>
+                </div>
+            </section>
 
-                </section>
+            <section class="news">
+                <div class="news__container">
+                    <h2>latest news</h2>
+
+                    <div class="swiper news-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide second-swiper">
+                                <div class="swiper-news-item">
+                                    <img src="styles/images/news-1.png" alt="">
+                                    <h4>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                                    <p>Free directories: directories are perfect for customers that are searching for...
+                                    </p>
+                                    <div class="user">
+                                        <img src="styles/images/icon1.svg" alt="">
+                                        <div class="user-title">
+                                            <h6>ALJA BRUN</h6>
+                                            <p>20 Jan 2020</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide second-swiper">Slide 2</div>
+                            <div class="swiper-slide second-swiper">Slide 3</div>
+                            <div class="swiper-slide second-swiper">Slide 4</div>
+                            <div class="swiper-slide second-swiper">Slide 5</div>
+                            <div class="swiper-slide second-swiper">Slide 6</div>
+                            <div class="swiper-slide second-swiper">Slide 7</div>
+                            <div class="swiper-slide second-swiper">Slide 8</div>
+                            <div class="swiper-slide second-swiper">Slide 9</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--lightbox-->
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <div class="row">
+                    <div class="grid-column">
+                        <div class="column">
+                            <img src="styles/images/grid1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        </div>
+
+                    </div>
+                    <div class="grid-column" style="display: grid;">
+                        <div class="column">
+                            <img src="styles/images/grid2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="styles/images/grid3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        </div>
+    
+                    </div>
+                    <div class="grid-column" style="display: grid;">
+                        <div class="column">
+                            <img src="styles/images/grid4.png" onclick="openModal();currentSlide(4)"
+                                class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="styles/images/grid5.png" onclick="openModal();currentSlide(5)"
+                                class="hover-shadow">
+                        </div>
+    
+                    </div>
+
+                </div>
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="styles/images/grid1-without-search.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="styles/images/grid2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="styles/images/grid3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="styles/images/grid4.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="styles/images/grid5.png" style="width:100%">
+                        </div>
+
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="styles/images/grid1-without-search.png" onclick="currentSlide(1)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="styles/images/grid2.png" onclick="currentSlide(2)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="styles/images/grid3.png" onclick="currentSlide(3)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="styles/images/grid4.png" onclick="currentSlide(4)" alt="">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="styles/images/grid5.png" onclick="currentSlide(5)" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="map-and-info">
+                <div class="map__container">
+                    <!-- <div class="map">
+                    </div> -->
+                </div>
+
+                <div class="get-in-touch">
+                    <div class="getintouch__container">
+                        <h2>get in touch</h2>
+                        <div class="getintouch__content">
+                            <div class="contacts">
+                                <p> 91 Nolan Extensions Suite 670 </p>
+                                <p> +001 356-868-2454</p>
+                                <p> montichello@service.com</p>
+                                <p> From 07:05AM to 19:30PM</p>
+                            </div>
+
+                            <div class="form">
+                                <input type="text">
+                                <input type="email" name="" id="" placeholder="Email">
+                                <button class="form__submit">submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container">
+            <div class="footer__logo">
+                <img src="styles/images/Logo.svg" alt="Monticello">
+                <p>Copyrights © 2020 Montichello</p>
             </div>
-        </main>
+            <div class="social">
+                <img src="styles/images/facebook.svg" alt="">
+                <img src="styles/images/insta.svg" alt="">
+                <img src="styles/images/twitter.svg" alt="">
+            </div>
+        </section>
 
-    </div>
+
+    </footer>
+</div>
+
+    <!-- </div> -->
 
 
 
