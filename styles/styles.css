@@ -659,8 +659,6 @@ img.hover-shadow {
     /* max-width: 1170px; */
     height: 700px;
     margin: 0 auto;
-    /* background-image: url('images/map-example.png'); */
-    z-index: -4;
 
 }
 
@@ -675,7 +673,7 @@ img.hover-shadow {
     box-shadow: 0px -4px 30px rgba(133, 133, 133, 0.2);
     position: absolute;
     bottom: 400px;
-    left: 415px;
+    left: 25%;
     z-index: 4;
 }
 
